@@ -29,7 +29,6 @@ p {
   font-weight: 600;
 }
 
-.kitty,
 .nav-links {
   display: none;
 }
@@ -48,7 +47,6 @@ img {
 }
 
 .container {
-  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -59,7 +57,6 @@ img {
 }
 
 header {
-  width: 100%;
   background-color: #fabebe;
   border: 3px solid black;
 }
@@ -138,29 +135,6 @@ main {
   /* Opera */
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-    right: -100%;
-  }
-  to {
-    opacity: 1;
-    right: 0;
-  }
-}
-
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-    right: -100px;
-  }
-  to {
-    opacity: 1;
-    right: 0;
-  }
-}
-
 .left {
   position: relative;
   animation: fadein 2s;
@@ -170,29 +144,6 @@ main {
   /* Safari and Chrome */
   -o-animation: fadein 2s;
   /* Opera */
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-    left: -100px;
-  }
-  to {
-    opacity: 1;
-    left: 0;
-  }
-}
-
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-    left: -100px;
-  }
-  to {
-    opacity: 1;
-    left: 0;
-  }
 }
 
 .story,
@@ -265,7 +216,7 @@ footer ul a {
   display: block;
   position: relative;
   top: 2rem;
-  left: 1.5rem;
+  left: .17rem;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -287,10 +238,10 @@ footer ul a {
 #menuToggle input {
   display: block;
   width: 40px;
-  height: 32px;
+  height: 2rem;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: -.5rem;
+  left: .6rem;
   cursor: pointer;
   opacity: 0;
   /* hide this */
@@ -307,6 +258,7 @@ footer ul a {
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
+  margin-left: 1rem;
   position: relative;
   background: #000;
   border-radius: 3px;
@@ -364,8 +316,8 @@ footer ul a {
 #menu {
   position: absolute;
   width: 100%;
-  margin: -100px 0 0 -24px;
-  padding: 1rem 1.5rem;
+  margin: -100px 0 0 -3.5px;
+  padding: 1rem 1rem;
   padding-top: 125px;
   background: url("/Images/2.gif");
   background-repeat: none;
@@ -472,10 +424,56 @@ footer ul a {
   }
   header {
     margin: 0 auto;
-    height: 35rem;
+    height: 33.5rem;
   }
   .navbar {
-    height: 20rem;
+    height: 18rem;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    right: -100%;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+    right: -100px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
