@@ -59,6 +59,9 @@ img {
 }
 
 header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
   background-color: #fabebe;
   border: 3px solid grey;
 }
@@ -128,24 +131,10 @@ main {
 
 .right {
   position: relative;
-  animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  /* Firefox */
-  -webkit-animation: fadein 3s;
-  /* Safari and Chrome */
-  -o-animation: fadein 3s;
-  /* Opera */
 }
 
 .left {
   position: relative;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  /* Firefox */
-  -webkit-animation: fadein 2s;
-  /* Safari and Chrome */
-  -o-animation: fadein 2s;
-  /* Opera */
 }
 
 .story,
@@ -436,7 +425,7 @@ footer ul a {
 @keyframes fadein {
   from {
     opacity: 0;
-    right: -100%;
+    right: -100px;
   }
   to {
     opacity: 1;
