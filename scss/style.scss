@@ -57,6 +57,7 @@ img {
 }
 
 header {
+	grid-area: header;
 	background-color: rgb(250, 190, 190);
 	border: 3px solid grey;
 }
@@ -109,18 +110,18 @@ main {
 
 .right {
 	position: relative;
-	animation: fadein 3s;
-	-moz-animation: fadein 3s; /* Firefox */
-	-webkit-animation: fadein 3s; /* Safari and Chrome */
-	-o-animation: fadein 3s; /* Opera */
+	// animation: fadein 3s;
+	// -moz-animation: fadein 3s; /* Firefox */
+	// -webkit-animation: fadein 3s; /* Safari and Chrome */
+	// -o-animation: fadein 3s; /* Opera */
 }
 
 .left {
 	position: relative;
-	animation: fadein 2s;
-	-moz-animation: fadein 2s; /* Firefox */
-	-webkit-animation: fadein 2s; /* Safari and Chrome */
-	-o-animation: fadein 2s; /* Opera */
+	// animation: fadein 2s;
+	// -moz-animation: fadein 2s; /* Firefox */
+	// -webkit-animation: fadein 2s; /* Safari and Chrome */
+	// -o-animation: fadein 2s; /* Opera */
 }
 
 .story,
@@ -385,7 +386,7 @@ footer {
 @keyframes fadein {
 	from {
 		opacity: 0;
-		right: -100%;
+		right: -100px;
 	}
 	to {
 		opacity: 1;
@@ -396,9 +397,11 @@ footer {
 	/* Firefox */
 	from {
 		opacity: 0;
+		right: -100px;
 	}
 	to {
 		opacity: 1;
+		right: 0;
 	}
 }
 @-webkit-keyframes fadein {
@@ -416,9 +419,11 @@ footer {
 	/* Opera */
 	from {
 		opacity: 0;
+		right: -100px;
 	}
 	to {
 		opacity: 1;
+		right: 0;
 	}
 }
 
@@ -438,9 +443,11 @@ footer {
 	/* Firefox */
 	from {
 		opacity: 0;
+		left: -100px;
 	}
 	to {
 		opacity: 1;
+		left: 0;
 	}
 }
 @-webkit-keyframes fadein {
@@ -458,8 +465,10 @@ footer {
 	/* Opera */
 	from {
 		opacity: 0;
+		left: -100px;
 	}
 	to {
 		opacity: 1;
+		left: 0;
 	}
 }
